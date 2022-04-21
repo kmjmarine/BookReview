@@ -18,7 +18,7 @@
 		E5E44D87281093C3002353EF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E5E44D86281093C3002353EF /* SnapKit */; };
 		E5E44D8A281093D8002353EF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E5E44D89281093D8002353EF /* Alamofire */; };
 		E5E44D8D281093E9002353EF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E5E44D8C281093E9002353EF /* Kingfisher */; };
-		E5E44D8F28109593002353EF /* ReviewListViewPresenterswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E44D8E28109593002353EF /* ReviewListViewPresenterswift.swift */; };
+		E5E44D8F28109593002353EF /* ReviewListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E44D8E28109593002353EF /* ReviewListViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 		E5E44D72281092E1002353EF /* BookReviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookReviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E44D76281092E1002353EF /* BookReviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewUITests.swift; sourceTree = "<group>"; };
 		E5E44D78281092E1002353EF /* BookReviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E5E44D8E28109593002353EF /* ReviewListViewPresenterswift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListViewPresenterswift.swift; sourceTree = "<group>"; };
+		E5E44D8E28109593002353EF /* ReviewListViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				E5E44D59281092DE002353EF /* ReviewListViewController.swift */,
-				E5E44D8E28109593002353EF /* ReviewListViewPresenterswift.swift */,
+				E5E44D8E28109593002353EF /* ReviewListViewPresenter.swift */,
 			);
 			path = ReviewList;
 			sourceTree = "<group>";
@@ -292,7 +292,7 @@
 				E5E44D5A281092DE002353EF /* ReviewListViewController.swift in Sources */,
 				E5E44D56281092DE002353EF /* AppDelegate.swift in Sources */,
 				E5E44D58281092DE002353EF /* SceneDelegate.swift in Sources */,
-				E5E44D8F28109593002353EF /* ReviewListViewPresenterswift.swift in Sources */,
+				E5E44D8F28109593002353EF /* ReviewListViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
