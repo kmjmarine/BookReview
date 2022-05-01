@@ -8,5 +8,5 @@
 import Foundation
 
 struct BookSearchResponseModel: Decodable {
-    let items: [Book] = []
+    var items: [Book] = []
 }
