@@ -10,7 +10,7 @@ import SnapKit
 
 final class ReviewListViewController: UIViewController {
     
-    private lazy var presenter = ReviewListViewPresenter(viewController: self)
+    private lazy var presenter = ReviewListPresenter(viewController: self)
     
     private  lazy var tableView: UITableView = {
         let tableView = UITableView()

@@ -1,5 +1,5 @@
 //
-//  ReviewListViewPresenter.swift
+//  ReviewListPresenter.swift
 //  BookReview
 //
 //  Created by kmjmarine on 2022/04/21.
@@ -15,14 +15,15 @@ protocol ReviewListProtocol {
     func reloadTableView()
 }
 
-final class ReviewListViewPresenter: NSObject {
+final class ReviewListPresenter: NSObject {
     private let viewController: ReviewListProtocol
-    private let userDefaultsManager = UserDefaultsManager()
+    private let userDefaultsManager: UserDefaultsManagerProtocol
     
     private var review: [BookReview] = [ ]
     
-    init(viewController: ReviewListProtocol) {
+    init(viewController: ReviewListProtocol, userDefaultsManager: UserDefaultsManagerProtocol = UserDefaultsManager()) {
         self.viewController = viewController
+        self.userDefaultsManager = userDefaultsManager
     }
     
     func viewDidLoad() {
@@ -40,7 +41,7 @@ final class ReviewListViewPresenter: NSObject {
     }
 }
 
-extension ReviewListViewPresenter: UITableViewDataSource {
+extension ReviewListPresenter: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         review.count
     }
